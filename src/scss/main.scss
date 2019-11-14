@@ -1,0 +1,138 @@
+@import "utils/reset";
+@import "utils/vars";
+@import "utils/fonts";
+
+html {
+  font-family: $mainFont;
+  background-color: $white;
+  font-size: $fz8;
+  color: $textColor;
+  line-height: $mainLineHeight;
+}
+
+// Links
+a {
+  text-decoration: none;
+  color: $textColor;
+
+  &:active,
+  &:hover {
+    outline: 0;
+    color: $textColor;
+  }
+}
+
+.wrapper {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $gray;
+}
+
+.wrapper.no-scroll {
+  height: 100vh;
+}
+
+.container {
+  padding: 0 10px;
+  width: 100%;
+  max-width: $smDesktopWidth;
+  margin: 0 auto;
+}
+
+.content{
+  background-color: $white;
+}
+
+main.main{
+  & P{
+    color: $textColor;
+  }
+}
+
+h1.title {
+  font-size: $fz11;
+}
+
+h2.title {
+  font-size: $fz12;
+  margin-bottom: 30px;
+}
+
+.button {
+  text-align: center;
+  & a{
+    padding: 17px 50px;
+    display: inline-block;
+    border-radius: 38px;
+    font-size: $fz9;
+    letter-spacing: $ls1;
+    text-transform: uppercase;
+    transition: .2s;
+    background-color: $blue;
+    cursor: pointer;
+    color: $white;
+    text-align: center;
+    font-family: $extraBold;
+    box-shadow: 
+    0 2px 2px 0 rgba(0,0,0,0.14), 
+    0 3px 1px -2px rgba(0,0,0,0.12), 
+    0 1px 5px 0 rgba(0,0,0,0.2);
+    & span{
+      font-family: $medium;
+      font-size: $fz7;
+    }
+    &:hover{
+      background-color: $lightBlue;
+      box-shadow: 
+      0 4px 4px 0 rgba(0,0,0,0.14), 
+      0 2px 8px 0 rgba(0,0,0,0.12), 
+      0 4px 2px -1px rgba(0,0,0,0.2);
+    }
+  }
+}
+
+.visible__sm {
+  display: none;
+}
+
+.visible__md {
+  display: none;
+}
+
+@import "modules/logo.scss";
+
+@import "modules/advantages.scss";
+
+@import "modules/main.scss";
+
+@import "modules/slick.scss";
+
+@import "modules/slick-theme.scss";
+
+@media (min-width: $tablet) {
+  .visible__sm {
+    display: block;
+  }
+
+  .hidden__sm {
+    display: none;
+  }
+}
+
+@media (min-width: $smDesktopWidth) {
+  .hidden__md{
+    display: none;
+  }
+
+  .visible__md{
+    display: block;
+  }
+
+  h2.title{
+    font-size: $fz40;
+  }
+}

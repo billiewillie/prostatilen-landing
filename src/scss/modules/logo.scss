@@ -1,0 +1,14 @@
+section.logo{
+  background-color: $blue;
+  text-align: center;
+  padding: 12px 0 5px;
+  & img{
+    width: 100%;
+    max-width: 410px;
+  }
+  &:last-child{
+    & img{
+      max-width: 320px;
+    }
+  }
+}

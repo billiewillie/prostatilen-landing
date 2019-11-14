@@ -1,0 +1,39 @@
+main.main{
+  z-index: 1;
+  position: relative;
+  & .container{
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: $smDesktopWidth) {
+  main.main{
+    & .container{
+      display: flex;
+      & ul.list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 140px;
+        margin-right: 15px;
+        & li.item{
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          align-items: center;
+          margin-bottom: 40px;
+          position: relative;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  main.main{
+    & .container{
+      display: flex;
+    }
+  }
+}
