@@ -1,6 +1,7 @@
 main.main{
   z-index: 1;
   position: relative;
+  min-height: 300px;
   & .container{
     display: flex;
     justify-content: flex-start;

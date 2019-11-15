@@ -1,0 +1,115 @@
+section.pharm{
+  padding: 75px 0;
+  & .container{
+    & ul.list{
+      padding: 0 10px;
+      background-color: $white;
+      display: flex;
+      flex-direction: column;
+      & li.item{
+        display: flex;
+        flex-direction: column;
+        padding: 45px 0;
+        position: relative;
+        & .top{
+          display: flex;
+          margin-bottom: 30px;
+          align-items: center;
+          justify-content: space-between;
+          & p.text{
+            font-size: $fz9;
+            text-transform: uppercase;
+            font-family: $medium;
+          }
+        }
+        & .button{
+          & a{
+            background-color: $red;
+            font-family: $bold;
+            font-size: $fz7;
+            padding: 20px 20px 20px 46px;
+            width: 100%;
+            background-image: url('/assets/img/icons/pharm/icon-1.svg');
+            background-repeat: no-repeat;
+            background-size: auto 45%;
+            background-position: 10% 50%;
+            letter-spacing: 0;
+            &:hover{
+              background-color: #e35772;
+            }
+          }
+        }
+        &:last-child{
+          & .top{
+            flex-direction: column;
+            & p.text{
+              width: 100%;
+              margin-bottom: 25px;
+            }
+          }
+          & .button{
+            & a{
+              background-image: url('/assets/img/icons/pharm/icon-2.svg');
+            }
+          }
+          &::before{
+            display: block;
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 0;
+            right: 0;
+            margin: auto;
+            width: 90%;
+            height: 1px;
+            background-color: $gray;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  section.pharm{
+    & .container{
+      & ul.list{
+        padding: 45px 0px;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: stretch;
+        & li.item{
+          padding: 0 35px;
+          width: 50%;
+          justify-content: space-between;
+          & .button{
+            & a{
+              font-size: $fz9;
+            }
+          }
+          &:last-child{
+            &::before{
+              bottom: 0;
+              right: auto;
+              margin: auto;
+              width: 1px;
+              height: 90%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $smDesktopWidth) {
+  section.pharm{
+    & .container{
+      & ul.list{
+        & li.item{
+          padding: 0 95px;
+        }
+      }
+    }
+  }
+}

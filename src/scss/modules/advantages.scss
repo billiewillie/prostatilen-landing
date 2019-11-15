@@ -1,6 +1,5 @@
 section.advantages{
   padding-bottom: 50px;
-  margin-bottom: 50px;
   position: relative;
   & .row{
     display: flex;
@@ -126,18 +125,20 @@ section.advantages{
     & .row{
       flex-direction: row;
       align-items: center;
-      &:nth-child(2){
-        margin-top: -150px;
-      }
       &.advantages--top{
         margin-bottom: 100px;
-        justify-content: space-between;
+        justify-content: center;
         & .pic{
+          position: absolute;
+          width: 30%;
+          left: 0;
           &.pick--statium{
             background-image: url('/assets/img/pattern/pattern-3.svg');
             background-position: -30% 50%;
             background-size: 120% 100%;
             text-align: right;
+            right: 0;
+            left: auto;
             & img{
               right: -20px;
             }
@@ -145,7 +146,7 @@ section.advantages{
               width: 100px;
               height: 100px;
               background-color: $blue;
-              left: 24%;
+              left: 20%;
               right: auto;
             }
           }
@@ -183,24 +184,12 @@ section.advantages{
 @media (min-width: $desktopWidth) {
   section.advantages{
     & .row{
-      &:nth-child(2){
-        margin-top: -350px;
-      }
       &.advantages--top{
         & .pic{
+          width: 40%;
           &.pick--statium{
             background-position: -30% 50%;
             background-size: 120% 100%;
-            & img{
-              right: -20px;
-            }
-            &::after{
-              width: 100px;
-              height: 100px;
-              background-color: $blue;
-              left: 24%;
-              right: auto;
-            }
           }
           &::after{
             width: 370px;
