@@ -3,12 +3,20 @@ section.logo{
   text-align: center;
   padding: 12px 0 5px;
   & img{
-    width: 100%;
+    width: 60%;
     max-width: 410px;
   }
   &:last-child{
     & img{
       max-width: 320px;
+    }
+  }
+}
+
+@media (min-width: $tablet){
+  section.logo{
+    & img{
+      width: 100%;
     }
   }
 }

@@ -45,9 +45,10 @@ section.advantages{
         position: relative;
         z-index: 1;
         & span{
-          font-size: $fz48;
+          font-size: $fz40;
           font-family: $extraBold;
           color: $blue;
+          text-transform: uppercase;
           &.icon{
             color: $white;
             font-size: $fz189;
@@ -158,6 +159,7 @@ section.advantages{
         & h2.title {
           margin-bottom: 0;
           & span{
+            font-size: $fz48;
             &.icon{
               right: 5%;
               
