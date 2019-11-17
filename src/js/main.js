@@ -1,1 +1,1 @@
-import slider from "./component/slider";
+// import slider from "./component/slider";

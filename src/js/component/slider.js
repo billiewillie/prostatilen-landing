@@ -1,11 +1,11 @@
 import "slick-carousel";
 
 function slider() {
-  if($('.company ul.slider').length) {
-    $('.company ul.slider').slick({
-      autoplay: true,
-    });
-  }
+  $('ul.slider').slick({
+    autoplay: false,
+    dots: true,
+    arrows: false
+  });
 }
 
 export default slider();
