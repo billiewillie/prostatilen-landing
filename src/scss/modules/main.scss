@@ -26,7 +26,7 @@ main.main{
               font-size: $fz6;
               display: inline-block;
               max-width: 200px;
-              text-align: left;
+              text-align: center;
               position: relative;
               min-height: 76px;
               z-index: 0;
@@ -310,13 +310,14 @@ main.main{
             stroke-dasharray: 2000;
             stroke-dashoffset: 2000; 
             animation-duration: 4.0s;
+            animation-delay: 1.0s;
             animation-fill-mode: forwards;
             animation-name: draw;
             &.tail-1 {
-              animation-delay: 1.0s;
+              animation-delay: 2.0s;
             }
             &.tail-2 {
-              animation-delay: 1.1s;
+              animation-delay: 2.1s;
             }
           }
         }
@@ -359,7 +360,7 @@ main.main{
         & ul.slider{
           & li.item{
             & .text{
-              right: 10%;
+              right: 5%;
               & p{
                 font-size: $fz12;
                 max-width: 300px;
@@ -383,7 +384,7 @@ main.main{
                 & p{
                   max-width: 400px;
                   &::before{
-                    left: -35px;
+                    left: -25px;
                     top: -95px;
                     width: 450px;
                     height: 353px;
