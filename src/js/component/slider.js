@@ -4,7 +4,8 @@ function slider() {
   $('ul.slider').slick({
     autoplay: false,
     dots: true,
-    arrows: false
+    arrows: false,
+    slidesToShow: 1
   });
 }
 

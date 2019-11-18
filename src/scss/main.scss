@@ -109,6 +109,8 @@ h2.title {
 
 @import "modules/advantages.scss";
 
+@import "modules/modal.scss";
+
 @import "modules/main.scss";
 
 @import "modules/slick.scss";
@@ -132,6 +134,10 @@ h2.title {
 
   .visible__md{
     display: block;
+  }
+
+  .slick-list{
+    overflow: hidden;
   }
 
   h2.title{

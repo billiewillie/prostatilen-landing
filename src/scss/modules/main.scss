@@ -13,6 +13,7 @@ main.main{
         & li.item{
           display: flex;
           flex-direction: column;
+          position: relative;
           & .text{
             text-align: center;
             margin-bottom: 90px;
@@ -227,7 +228,7 @@ main.main{
               margin-bottom: 0px;
               order: 2;
               position: absolute;
-              right: -5%;
+              right: 0%;
               top: 80px;
               & p{
                 font-size: $fz6;
@@ -250,8 +251,8 @@ main.main{
             &.slide-2,
             &.slide-4 {
               & .text{
-                right: -3%;
-                top: 40px;
+                right: 0;
+                top: 50px;
               }
             }
           }
@@ -328,7 +329,8 @@ main.main{
             &.slide-2,
             &.slide-4 {
               & .text{
-                right: -50px;
+                right: 25px;
+                top: 100px;
                 & p{
                   max-width: 400px;
                   &::before{
