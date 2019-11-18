@@ -5,8 +5,8 @@ function slider() {
     dots: true,
     arrows: false,
     slidesToShow: 1,
-    autoplay: false,
-    autoplaySpeed: 3000,
+    autoplay: true,
+    autoplaySpeed: 3500,
   });
 };
 
