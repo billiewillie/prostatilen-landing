@@ -1,6 +1,7 @@
 section.advantages{
   padding-bottom: 50px;
   position: relative;
+  z-index: 2;
   & .row{
     display: flex;
     flex-direction: column;

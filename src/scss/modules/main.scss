@@ -115,6 +115,14 @@ main.main{
               }
             }
           }
+          &.slide-6 {
+            & .pic{
+              background-image: url('/assets/img/slides/slide-6.png'), url('/assets/img/slides/slide-6-hover.png');
+              &:hover{
+                background-image: url('/assets/img/slides/slide-6-hover.png');
+              }
+            }
+          }
         }
       }
       &::before{
@@ -159,6 +167,7 @@ main.main{
       }
       & .button{
         margin: -7px auto 30px;
+        position: relative;
         & a{
           background-color: $red;
           font-family: $bold;
@@ -215,15 +224,6 @@ main.main{
   }
 }
 
-@keyframes dash {
-  from {
-    stroke-dashoffset: 1000;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
 @media (min-width: $tablet) {
   main.main{
     padding: 100px 0 0;
@@ -254,7 +254,7 @@ main.main{
         position: relative;
         order: 2;
         width: 64%;
-        margin-left: -30px;
+        margin-left: -110px;
         & ul.slider{
           margin-bottom: 50px;
           & li.item{
@@ -292,10 +292,13 @@ main.main{
             }
           }
         }
+        & .slick-dots{
+          width: 75%;
+        }
         &::before{
-          left: -60px;
+          left: -30px;
           bottom: 0%;
-          width: 120%;
+          width: 130%;
           height: 100%;
           background-image: url('/assets/img/pattern/pattern-1.png');
           background-size: auto 100%;
@@ -342,6 +345,7 @@ main.main{
   main.main{
     & .container{
       & .experts{
+        margin-left: -100px;
         & ul.slider{
           & li.item{
             & .text{
@@ -378,6 +382,9 @@ main.main{
               }
             }
           }
+        }
+        & .slick-dots{
+          width: 65%;
         }
       }
       & .content{
