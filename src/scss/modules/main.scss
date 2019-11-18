@@ -250,6 +250,7 @@ main.main{
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
+      align-items: flex-end;
       & .experts{
         position: relative;
         order: 2;
@@ -297,7 +298,7 @@ main.main{
         }
         &::before{
           left: -30px;
-          bottom: 0%;
+          bottom: -60px;
           width: 130%;
           height: 100%;
           background-image: url('/assets/img/pattern/pattern-1.png');
@@ -386,10 +387,15 @@ main.main{
         & .slick-dots{
           width: 65%;
         }
+        &::before{
+          left: -70px;
+          bottom: -25px;
+        }
       }
       & .content{
         & p.text{
           font-size: $fz10;
+          margin-bottom: 30px;
           &.text-1,
           &.text-2,
           &.text-6{
