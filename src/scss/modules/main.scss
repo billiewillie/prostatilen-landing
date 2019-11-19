@@ -26,7 +26,7 @@ main.main{
               font-family: $medium;
               font-size: $fz6;
               display: inline-block;
-              max-width: 200px;
+              max-width: 195px;
               text-align: center;
               position: relative;
               min-height: 76px;
@@ -55,8 +55,30 @@ main.main{
             background-repeat: no-repeat;
             background-position: 20% 100%;
             margin: auto;
+            position: relative;
             &:hover{
               background-image: url('/assets/img/slides/slide-1-hover.png');
+            }
+            & span {
+              position: absolute;
+              background-color: #fff;
+              width: 10px;
+              height: 10px;
+              border-radius: 50%;
+              right: 90px;
+              top: 90px;
+              &:nth-child(2) {
+                width: 20px;
+                height: 20px;
+                right: 60px;
+                top: 65px;
+              }
+              &:nth-child(3) {
+                width: 30px;
+                height: 30px;
+                right: 35px;
+                top: 15px;
+              }
             }
           }
           &.slide-2 {
@@ -74,7 +96,7 @@ main.main{
                   left: -5px;
                   top: -50px;
                   width: 230px;
-                  height: 180px;
+                  height: 170px;
                 }
               }
             }
@@ -84,6 +106,15 @@ main.main{
               background-image: url('/assets/img/slides/slide-3.png'), url('/assets/img/slides/slide-3-hover.png');
               &:hover{
                 background-image: url('/assets/img/slides/slide-3-hover.png');
+              }
+              & span {
+                top: 80px;
+                &:nth-child(2) {
+                  top: 45px;
+                }
+                &:nth-child(3) {
+                  top: 0px;
+                }
               }
             }
             & .text{
@@ -123,6 +154,15 @@ main.main{
               &:hover{
                 background-image: url('/assets/img/slides/slide-5-hover.png');
               }
+              & span {
+                top: 80px;
+                &:nth-child(2) {
+                  top: 45px;
+                }
+                &:nth-child(3) {
+                  top: 0px;
+                }
+              }
             }
             & .text{
               & p{
@@ -140,6 +180,15 @@ main.main{
               background-image: url('/assets/img/slides/slide-6.png'), url('/assets/img/slides/slide-6-hover.png');
               &:hover{
                 background-image: url('/assets/img/slides/slide-6-hover.png');
+              }
+              & span {
+                top: 80px;
+                &:nth-child(2) {
+                  top: 45px;
+                }
+                &:nth-child(3) {
+                  top: 0px;
+                }
               }
             }
             & .text{
@@ -211,12 +260,22 @@ main.main{
       z-index: 1;
       & .text{
         font-size: $fz6;
-        background-color: $white;
         margin-bottom: 20px;
         padding: 15px;
         text-align: left;
         max-width: 450px;
         text-transform: uppercase;
+        position: relative;
+        z-index: 0;
+        & svg{
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0%;
+          top: 0;
+          fill: $white;
+          z-index: -1;
+        }
       }
       & p.text-1{
         background-color: $red;
@@ -288,7 +347,7 @@ main.main{
               top: 80px;
               & p{
                 font-size: $fz6;
-                max-width: 200px;
+                max-width: 195px;
                 min-height: 76px;
                 & span.blue{
                   background-color: $blue;
@@ -304,12 +363,93 @@ main.main{
               order: 1;
               background-position: 0px 100%;
               margin: inherit;
+              & span {
+                width: 15px;
+                height: 15px;
+                right: 160px;
+                top: 310px;
+                &:nth-child(2) {
+                  width: 25px;
+                  height: 25px;
+                  right: 80px;
+                  top: 280px;
+                }
+                &:nth-child(3) {
+                  width: 47px;
+                  height: 47px;
+                  right: 0px;
+                  top: 200px;
+                }
+              }
             }
             &.slide-2,
             &.slide-4 {
               & .text{
                 right: 10px;
                 top: 50px;
+              }
+            }
+            &.slide-3{
+              & .pic{
+                & span {
+                  right: 130px;
+                  top: 330px;
+                  &:nth-child(2) {
+                    right: 65px;
+                    top: 280px;
+                  }
+                  &:nth-child(3) {
+                    right: 0px;
+                    top: 200px;
+                  }
+                }
+              }
+            }
+            &.slide-4{
+              & .pic{
+                & span {
+                  right: 180px;
+                  top: 330px;
+                  &:nth-child(2) {
+                    right: 110px;
+                    top: 280px;
+                  }
+                  &:nth-child(3) {
+                    right: 30px;
+                    top: 200px;
+                  }
+                }
+              }
+            }
+            &.slide-5{
+              & .pic{
+                & span {
+                  right: 150px;
+                  top: 310px;
+                  &:nth-child(2) {
+                    right: 80px;
+                    top: 270px;
+                  }
+                  &:nth-child(3) {
+                    right: 0px;
+                    top: 200px;
+                  }
+                }
+              }
+            }
+            &.slide-6{
+              & .pic{
+                & span {
+                  right: 100px;
+                  top: 240px;
+                  &:nth-child(2) {
+                    right: 50px;
+                    top: 200px;
+                  }
+                  &:nth-child(3) {
+                    display: none;
+                  }
+                }
               }
             }
           }
@@ -365,29 +505,32 @@ main.main{
         order: 1;
         width: 36%;
         margin: initial;
-        & p.text-1{
-          background-color: $red;
-          color: $white;
-          font-family: $bold;
-          margin-bottom: 0;
-        }
-        & p.text-2{
-          background-color: transparent;
-          font-family: $bold;
-          padding: 5px 15px 15px;
-        }
-        & p.text-4{
-          max-width: 400px;
-        }
-        & p.text-6{
-          background-color: $blue;
-          color: $white;
-          font-family: $bold;
-          text-transform: uppercase;
-          display: inline-block;
-          max-width: 215px;
-          padding: 35px;
-          margin-bottom: 70px;
+        & p.text{
+          &.text-1{
+            background-color: $red;
+            color: $white;
+            font-family: $bold;
+            margin-bottom: 0;
+          }
+          &.text-2{
+            background-color: transparent;
+            font-family: $bold;
+            padding: 5px 15px 15px;
+            margin-bottom: 10px;
+          }
+          &.text-4{
+            max-width: 410px;
+          }
+          &.text-6{
+            background-color: $blue;
+            color: $white;
+            font-family: $bold;
+            text-transform: uppercase;
+            display: inline-block;
+            max-width: 215px;
+            padding: 35px;
+            margin-bottom: 70px;
+          }
         }
       }
     }
@@ -417,6 +560,24 @@ main.main{
             & .pic{
               height: 677px;
               width: 625px;
+              & span {
+                width: 15px;
+                height: 15px;
+                right: 130px;
+                top: 380px;
+                &:nth-child(2) {
+                  width: 25px;
+                  height: 25px;
+                  right: 65px;
+                  top: 335px;
+                }
+                &:nth-child(3) {
+                  width: 47px;
+                  height: 47px;
+                  right: 0px;
+                  top: 260px;
+                }
+              }
             }
             &.slide-1 {
               & .text{
@@ -440,6 +601,20 @@ main.main{
                   }
                 }
               }
+              & .pic{
+                & span {
+                  right: 130px;
+                  top: 380px;
+                  &:nth-child(2) {
+                    right: 65px;
+                    top: 335px;
+                  }
+                  &:nth-child(3) {
+                    right: 0px;
+                    top: 260px;
+                  }
+                }
+              }
             }
             &.slide-3 {
               & .text{
@@ -449,6 +624,20 @@ main.main{
                     height: 220px;
                     width: 300px;
                     top: -55px;
+                  }
+                }
+              }
+              & .pic{
+                & span {
+                  right: 130px;
+                  top: 380px;
+                  &:nth-child(2) {
+                    right: 65px;
+                    top: 335px;
+                  }
+                  &:nth-child(3) {
+                    right: 0px;
+                    top: 260px;
                   }
                 }
               }
@@ -467,6 +656,20 @@ main.main{
                   }
                 }
               }
+              & .pic{
+                & span {
+                  right: 160px;
+                  top: 380px;
+                  &:nth-child(2) {
+                    right: 100px;
+                    top: 350px;
+                  }
+                  &:nth-child(3) {
+                    right: 50px;
+                    top: 280px;
+                  }
+                }
+              }
             }
             &.slide-5 {
               & .text{
@@ -477,6 +680,20 @@ main.main{
                     width: 300px;
                     top: -55px;
                     left: 3px;
+                  }
+                }
+              }
+              & .pic{
+                & span {
+                  right: 100px;
+                  top: 340px;
+                  &:nth-child(2) {
+                    right: 50px;
+                    top: 300px;
+                  }
+                  &:nth-child(3) {
+                    right: 0px;
+                    top: 240px;
                   }
                 }
               }
@@ -492,6 +709,19 @@ main.main{
                     width: 400px;
                     left: 0px;
                     top: -70px;
+                  }
+                }
+              }
+              & .pic{
+                & span {
+                  right: 100px;
+                  top: 300px;
+                  &:nth-child(2) {
+                    right: 40px;
+                    top: 270px;
+                  }
+                  &:nth-child(3) {
+                    display: none;
                   }
                 }
               }

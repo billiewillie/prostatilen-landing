@@ -39,6 +39,11 @@ section.advantages{
           position: relative;
           height: 300px;
         }
+        &.pick--hand{
+          & img{
+            animation: 4s linear 2s infinite alternate pack;
+          }
+        }
       }
       & h2.title {
         text-align: center;
@@ -219,3 +224,15 @@ section.advantages{
     }
   }
 }
+
+@keyframes pack {
+  0% {
+    margin-left: 0;
+  }
+  10% {
+    margin-left: -100px;
+  }
+  20% {
+    margin-left: 0;
+   }
+ }
