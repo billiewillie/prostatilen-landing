@@ -79,6 +79,16 @@ main.main{
                 right: 35px;
                 top: 15px;
               }
+              &.name{
+                width: auto;
+                height: auto;
+                background-color: transparent;
+                right: 10px;
+                bottom: 0;
+                top: auto;
+                font-size: $fz2;
+                text-align: right;
+              }
             }
           }
           &.slide-2 {
@@ -114,6 +124,9 @@ main.main{
                 }
                 &:nth-child(3) {
                   top: 0px;
+                }
+                &.name{
+                  top: auto;
                 }
               }
             }
@@ -162,6 +175,9 @@ main.main{
                 &:nth-child(3) {
                   top: 0px;
                 }
+                &.name{
+                  top: auto;
+                }
               }
             }
             & .text{
@@ -188,6 +204,9 @@ main.main{
                 }
                 &:nth-child(3) {
                   top: 0px;
+                }
+                &.name{
+                  top: auto;
                 }
               }
             }
@@ -380,6 +399,12 @@ main.main{
                   right: 0px;
                   top: 200px;
                 }
+                &.name{
+                  right: 0;
+                  top: auto;
+                  bottom: 0;
+                  font-size: $fz5;
+                }
               }
             }
             &.slide-2,
@@ -402,6 +427,11 @@ main.main{
                     right: 0px;
                     top: 200px;
                   }
+                  &.name{
+                    right: 0;
+                    top: auto;
+                    bottom: 0;
+                  }
                 }
               }
             }
@@ -417,6 +447,11 @@ main.main{
                   &:nth-child(3) {
                     right: 30px;
                     top: 200px;
+                  }
+                  &.name{
+                    right: 0;
+                    top: auto;
+                    bottom: 0;
                   }
                 }
               }
@@ -434,6 +469,11 @@ main.main{
                     right: 0px;
                     top: 200px;
                   }
+                  &.name{
+                    right: 0;
+                    top: auto;
+                    bottom: 0;
+                  }
                 }
               }
             }
@@ -448,6 +488,11 @@ main.main{
                   }
                   &:nth-child(3) {
                     display: none;
+                  }
+                  &.name{
+                    right: 0;
+                    top: auto;
+                    bottom: 0;
                   }
                 }
               }
@@ -577,6 +622,11 @@ main.main{
                   right: 0px;
                   top: 260px;
                 }
+                &.name{
+                  right: 0;
+                  top: auto;
+                  bottom: 0;
+                }
               }
             }
             &.slide-1 {
@@ -613,6 +663,11 @@ main.main{
                     right: 0px;
                     top: 260px;
                   }
+                  &.name{
+                    right: 0;
+                    top: auto;
+                    bottom: 0;
+                  }
                 }
               }
             }
@@ -638,6 +693,11 @@ main.main{
                   &:nth-child(3) {
                     right: 0px;
                     top: 260px;
+                  }
+                  &.name{
+                    right: 0;
+                    top: auto;
+                    bottom: 0;
                   }
                 }
               }
@@ -668,6 +728,11 @@ main.main{
                     right: 50px;
                     top: 280px;
                   }
+                  &.name{
+                    right: 0;
+                    top: auto;
+                    bottom: 0;
+                  }
                 }
               }
             }
@@ -694,6 +759,11 @@ main.main{
                   &:nth-child(3) {
                     right: 0px;
                     top: 240px;
+                  }
+                  &.name{
+                    right: 0;
+                    top: auto;
+                    bottom: 0;
                   }
                 }
               }
@@ -722,6 +792,11 @@ main.main{
                   }
                   &:nth-child(3) {
                     display: none;
+                  }
+                  &.name{
+                    right: 0;
+                    top: auto;
+                    bottom: 0;
                   }
                 }
               }
