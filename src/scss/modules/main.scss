@@ -1,6 +1,5 @@
 main.main{
-  padding: 70px 0 0;
-  margin-bottom: 70px;
+  padding: 50px 0 0;
   background-image: url('/assets/img/pattern/pattern-5.png');
   background-size: content;
   background-position: 50%;
@@ -12,6 +11,7 @@ main.main{
     & .experts{
       position: relative;
       z-index: 1;
+      min-height: 376px;
       & ul.slider{
         margin-bottom: 50px;
         & li.item{
@@ -19,8 +19,9 @@ main.main{
           flex-direction: column;
           position: relative;
           & .text{
-            text-align: center;
-            margin-bottom: 90px;
+            text-align: right;
+            margin-bottom: 30px;
+            padding-right: 20px;
             & p{
               font-family: $medium;
               font-size: $fz6;
@@ -30,20 +31,16 @@ main.main{
               position: relative;
               min-height: 76px;
               z-index: 0;
-              & span.blue{
-                background-color: $blue;
-                color: $white;
-              }
               &::before{
                 display: block;
                 position: absolute;
                 content: '';
-                left: -25px;
-                top: -55px;
+                left: -10px;
+                top: -40px;
                 width: 218px;
-                height: 170px;
+                height: 148px;
                 background-image: url('/assets/img/slides/cloud.svg');
-                background-size: cover;
+                background-size: contain;
                 background-position: 50%;
                 background-repeat: no-repeat;
                 z-index: -1;
@@ -51,12 +48,13 @@ main.main{
             }
           }
           & .pic{
-            height: 320px;
+            height: 220px;
             text-align: center;
             background-image: url('/assets/img/slides/slide-1.png'), url('/assets/img/slides/slide-1-hover.png');
             background-size: contain;
             background-repeat: no-repeat;
-            background-position: 50% 100%;
+            background-position: 20% 100%;
+            margin: auto;
             &:hover{
               background-image: url('/assets/img/slides/slide-1-hover.png');
             }
@@ -71,9 +69,10 @@ main.main{
             & .text{
               & p{
                 max-width: 220px;
+                font-size: $fz5;
                 &::before{
-                  left: -15px;
-                  top: -47px;
+                  left: -5px;
+                  top: -50px;
                   width: 230px;
                   height: 180px;
                 }
@@ -87,6 +86,16 @@ main.main{
                 background-image: url('/assets/img/slides/slide-3-hover.png');
               }
             }
+            & .text{
+              & p{
+                &::before{
+                  left: 5px;
+                  top: -35px;
+                  width: 185px;
+                  height: 125px;
+                }
+              }
+            }
           }
           &.slide-4 {
             & .pic{
@@ -98,9 +107,10 @@ main.main{
             & .text{
               & p{
                 max-width: 220px;
+                font-size: $fz5;
                 &::before{
-                  left: -15px;
-                  top: -47px;
+                  left: -5px;
+                  top: -50px;
                   width: 230px;
                   height: 180px;
                 }
@@ -114,12 +124,34 @@ main.main{
                 background-image: url('/assets/img/slides/slide-5-hover.png');
               }
             }
+            & .text{
+              & p{
+                &::before{
+                  left: 5px;
+                  top: -45px;
+                  width: 190px;
+                  height: 148px;
+                }
+              }
+            }
           }
           &.slide-6 {
             & .pic{
               background-image: url('/assets/img/slides/slide-6.png'), url('/assets/img/slides/slide-6-hover.png');
               &:hover{
                 background-image: url('/assets/img/slides/slide-6-hover.png');
+              }
+            }
+            & .text{
+              & p{
+                max-width: 220px;
+                font-size: $fz5;
+                &::before{
+                  left: -5px;
+                  top: -42px;
+                  width: 230px;
+                  height: 140px;
+                }
               }
             }
           }
@@ -142,18 +174,18 @@ main.main{
     }
     & .title{
       & h1.title{
-        background-color: rgba(0,50,160,.3);
+        background-color: rgba(130,214,247,.3);
         font-family: $extraBold;
         font-size: $fz10;
         text-transform: uppercase;
-        max-width: 411px;
+        max-width: 473px;
         text-align: center;
         margin: auto;
         padding: 22px 0;
         position: relative;
       }
       & .button{
-        margin: -7px auto 30px;
+        margin: -7px auto 0px;
         position: relative;
         & a{
           background-color: $red;
@@ -174,13 +206,14 @@ main.main{
       background-color: transparent;
       text-align: center;
       max-width: 514px;
+      margin: auto;
       position: relative;
       z-index: 1;
       & .text{
-        font-size: $fz8;
+        font-size: $fz6;
         background-color: $white;
         margin-bottom: 20px;
-        padding: 20px;
+        padding: 15px;
         text-align: left;
         max-width: 450px;
         text-transform: uppercase;
@@ -195,9 +228,9 @@ main.main{
         background-color: transparent;
         font-family: $bold;
         text-transform: inherit;
+        margin-bottom: 0;
         & span{
           color: $blue;
-          border-bottom: 3px dashed $white;
         }
       }
       & p.text-6{
@@ -231,7 +264,7 @@ main.main{
 
 @media (min-width: $smDesktopWidth) {
   main.main{
-    padding: 100px 0 0;
+    padding: 30px 0 0;
     margin-bottom: 120px;
     & .container{
       display: flex;
@@ -241,7 +274,7 @@ main.main{
       & .experts{
         position: relative;
         order: 2;
-        width: 64%;
+        width: 70%;
         margin-left: -110px;
         & ul.slider{
           margin-bottom: 50px;
@@ -251,7 +284,7 @@ main.main{
               margin-bottom: 0px;
               order: 2;
               position: absolute;
-              right: 0%;
+              right: 30px;
               top: 80px;
               & p{
                 font-size: $fz6;
@@ -262,7 +295,7 @@ main.main{
                   color: $white;
                 }
                 &::before{
-                  left: -35px;
+                  left: -10px;
                 }
               }
             }
@@ -270,11 +303,12 @@ main.main{
               text-align: left;
               order: 1;
               background-position: 0px 100%;
+              margin: inherit;
             }
             &.slide-2,
             &.slide-4 {
               & .text{
-                right: 0;
+                right: 10px;
                 top: 50px;
               }
             }
@@ -299,6 +333,9 @@ main.main{
         order: 3;
         width: 100%;
         position: relative;
+        & h1.title{
+          font-size: 32px;
+        }
         & svg {
           position: absolute;
           left: 110%;
@@ -327,18 +364,20 @@ main.main{
         text-align: center;
         order: 1;
         width: 36%;
+        margin: initial;
         & p.text-1{
           background-color: $red;
           color: $white;
           font-family: $bold;
+          margin-bottom: 0;
         }
         & p.text-2{
           background-color: transparent;
           font-family: $bold;
-          & span{
-            color: $blue;
-            border-bottom: 3px dashed $white;
-          }
+          padding: 5px 15px 15px;
+        }
+        & p.text-4{
+          max-width: 400px;
         }
         & p.text-6{
           background-color: $blue;
@@ -346,6 +385,9 @@ main.main{
           font-family: $bold;
           text-transform: uppercase;
           display: inline-block;
+          max-width: 215px;
+          padding: 35px;
+          margin-bottom: 70px;
         }
       }
     }
@@ -361,8 +403,8 @@ main.main{
           & li.item{
             & .text{
               right: 5%;
+              font-size: $fz12;
               & p{
-                font-size: $fz12;
                 max-width: 300px;
                 &::before{
                   left: -35px;
@@ -376,18 +418,80 @@ main.main{
               height: 677px;
               width: 625px;
             }
-            &.slide-2,
+            &.slide-1 {
+              & .text{
+                & p{
+                  font-size: $fz12;
+                  &::before{
+                    height: 260px;
+                  }
+                }
+              }
+            }
+            &.slide-2 {
+              & .text{
+                & p{
+                  font-size: $fz12;
+                  max-width: 360px;
+                  &::before{
+                    height: 270px;
+                    width: 400px;
+                    left: -20px;
+                  }
+                }
+              }
+            }
+            &.slide-3 {
+              & .text{
+                & p{
+                  font-size: $fz12;
+                  &::before{
+                    height: 220px;
+                    width: 300px;
+                    top: -55px;
+                  }
+                }
+              }
+            }
             &.slide-4 {
               & .text{
-                right: 25px;
-                top: 100px;
+                top: 70px;
                 & p{
+                  font-size: $fz12;
                   max-width: 400px;
                   &::before{
-                    left: -25px;
-                    top: -95px;
-                    width: 450px;
-                    height: 353px;
+                    height: 300px;
+                    width: 460px;
+                    left: -30px;
+                    top: -70px;
+                  }
+                }
+              }
+            }
+            &.slide-5 {
+              & .text{
+                & p{
+                  font-size: $fz12;
+                  &::before{
+                    height: 220px;
+                    width: 300px;
+                    top: -55px;
+                    left: 3px;
+                  }
+                }
+              }
+            }
+            &.slide-6 {
+              & .text{
+                top: 70px;
+                & p{
+                  font-size: $fz12;
+                  max-width: 400px;
+                  &::before{
+                    height: 260px;
+                    width: 400px;
+                    left: 0px;
+                    top: -70px;
                   }
                 }
               }
@@ -409,7 +513,10 @@ main.main{
           &.text-1,
           &.text-2,
           &.text-6{
-            font-size: $fz12;
+            font-size: $fz28;
+          }
+          &.text-6{
+            max-width: 333px;
           }
         }
       }
