@@ -6,7 +6,7 @@ function slider() {
     arrows: false,
     slidesToShow: 1,
     autoplay: true,
-    autoplaySpeed: 3500,
+    autoplaySpeed: 5000,
   });
 };
 
